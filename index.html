@@ -3,79 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7faf7">
-  <meta name="description" content="Profil Rayyan Alzahri, pustakawan di Library BINUS University. Tentang layanan perpustakaan, literasi informasi, dan pengembangan pengetahuan.">
-  <title>Rayyan Alzahri — Pustakawan & Information Services</title>
+  <meta name="theme-color" content="#f5f8f4">
+  <meta name="description" content="Website resmi personal Rayyan Alzahri, pustakawan di Library BINUS University. Berbagi tentang perpustakaan, literasi informasi, dan pembelajaran.">
+  <meta property="og:title" content="Rayyan Alzahri — Pustakawan & Literasi Informasi">
+  <meta property="og:description" content="Profil profesional Rayyan Alzahri, pustakawan di Library BINUS University.">
+  <meta property="og:type" content="website">
+  <title>Rayyan Alzahri — Pustakawan & Literasi Informasi</title>
   <style>
-    :root{--green:#176b4d;--green2:#21845e;--ink:#17251f;--muted:#64736b;--line:#e1eae4;--paper:#f7faf7;--white:#fff;--pale:#eaf4ed}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 44px));margin:auto}
-    header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-    .brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.03em}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--green);color:#fff;font-size:17px}
-    nav{display:flex;gap:27px;color:#53645a;font-size:14px}nav a:hover,.text-link:hover{color:var(--green2)}
-    .hero{padding:105px 0 90px;display:grid;grid-template-columns:1.4fr .6fr;gap:65px;align-items:center}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
-    .dot{width:8px;height:8px;border-radius:50%;background:#48a779;box-shadow:0 0 0 4px #dcefe3}
-    h1{font-size:clamp(42px,6vw,70px);line-height:1.06;letter-spacing:-.065em;margin:23px 0 24px;font-weight:760}
-    h1 span{color:var(--green)}.lead{max-width:620px;font-size:18px;color:#5b6a61;line-height:1.8}
-    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:9px;font-weight:650;font-size:14px;border:1px solid var(--line);transition:.2s}
-    .btn.primary{background:var(--green);color:white;border-color:var(--green)}.btn.primary:hover{background:#10563d}.btn.secondary:hover{background:white}
-    .profile-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 18px 50px #183b2410}
-    .avatar{height:200px;border-radius:14px;background:linear-gradient(145deg,#dcefe2,#f0f7f1);display:grid;place-items:center;position:relative;overflow:hidden}
-    .avatar:before,.avatar:after{content:"";position:absolute;border:1px solid #b8d8c2;border-radius:50%;width:200px;height:200px}.avatar:after{width:145px;height:145px}
-    .initials{z-index:1;font-size:54px;letter-spacing:-.08em;font-weight:800;color:var(--green)}
-    .card-label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:750;margin-top:22px}
-    .card-title{font-size:20px;font-weight:750;letter-spacing:-.03em;margin:5px 0}.card-sub{font-size:14px;color:var(--muted)}
-    .status{display:inline-flex;gap:8px;align-items:center;background:#edf7ef;color:#236b49;border-radius:30px;padding:7px 11px;font-size:12px;font-weight:700;margin-top:18px}
-    section{padding:78px 0;border-top:1px solid var(--line)}.section-head{max-width:650px;margin-bottom:34px}.kicker{font-size:12px;letter-spacing:.15em;color:var(--green);font-weight:800;text-transform:uppercase}
-    h2{font-size:clamp(30px,4vw,43px);letter-spacing:-.05em;line-height:1.15;margin:12px 0 15px}.section-intro{color:var(--muted);font-size:16px;margin:0}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.about-copy p{color:#58675e;margin-top:0}
-    .principles{display:grid;gap:12px}.principle{display:flex;gap:15px;padding:17px;background:#fff;border:1px solid var(--line);border-radius:12px}
-    .icon{width:40px;height:40px;flex:0 0 40px;border-radius:11px;background:var(--pale);display:grid;place-items:center;color:var(--green);font-size:18px;font-weight:800}
-    .principle strong{display:block;margin-bottom:3px}.principle span{font-size:13px;color:var(--muted)}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{padding:25px;background:#fff;border:1px solid var(--line);border-radius:15px;min-height:190px}
-    .service .icon{margin-bottom:22px}.service h3{font-size:17px;letter-spacing:-.025em;margin:0 0 9px}.service p{font-size:14px;color:var(--muted);margin:0}
-    .note{margin-top:24px;padding:15px 18px;background:#eef6f0;border-radius:10px;font-size:13px;color:#496354}
-    .contact{background:#173f30;color:#fff;border-radius:20px;padding:44px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact h2{max-width:550px;margin-top:10px}.contact p{color:#d1e1d7;max-width:540px}.contact .btn{background:#fff;color:#174b35;border-color:#fff;white-space:nowrap}
-    footer{padding:27px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:15px}
-    @media(max-width:760px){nav{gap:13px;font-size:12px}.hero{padding:65px 0;grid-template-columns:1fr;gap:35px}.profile-card{max-width:420px}.about-grid{grid-template-columns:1fr;gap:25px}.cards{grid-template-columns:1fr}.contact{padding:30px;display:block}.contact .btn{margin-top:10px}section{padding:58px 0}}
-    @media(max-width:440px){.wrap{width:min(100% - 30px,1100px)}header{height:auto;padding:17px 0;align-items:flex-start;gap:12px;flex-direction:column}nav{flex-wrap:wrap}.hero{padding-top:50px}footer{flex-direction:column}}
+    :root{--green:#176b4d;--green-dark:#104a36;--mint:#dcefe1;--ink:#17251f;--muted:#66756b;--line:#e1e9e1;--paper:#f5f8f4;--white:#fff;--pale:#edf5ee;--shadow:0 20px 60px rgba(23,65,42,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(245,248,244,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(225,233,225,.9)}header{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.035em}.mark{display:grid;place-items:center;width:39px;height:39px;border-radius:13px;background:var(--green);color:#fff;font-size:16px;box-shadow:0 5px 15px #176b4d24}
+    nav{display:flex;gap:28px;align-items:center;color:#53645a;font-size:14px}nav a{transition:color .2s}nav a:hover,.text-link:hover{color:var(--green)}.nav-cta{padding:9px 14px;border:1px solid #cbdccf;border-radius:9px;color:var(--green);font-weight:700}
+    .hero{padding:92px 0 88px;display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--green);font-size:12px;font-weight:850;letter-spacing:.14em;text-transform:uppercase}.dot{width:8px;height:8px;border-radius:50%;background:#4aa675;box-shadow:0 0 0 4px #dcefe3}
+    h1{font-size:clamp(43px,6.2vw,76px);line-height:1.04;letter-spacing:-.068em;margin:23px 0 25px;font-weight:780;max-width:720px}h1 span{color:var(--green)}.lead{max-width:640px;font-size:18px;color:#5b6a61;line-height:1.85;margin:0}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:31px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:10px;font-weight:720;font-size:14px;border:1px solid var(--line);transition:transform .2s,background .2s,border-color .2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}.btn.primary:hover{background:var(--green-dark)}.btn.secondary{background:rgba(255,255,255,.65)}.btn.secondary:hover{background:#fff;border-color:#c9d9cd}
+    .profile-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;padding:25px;box-shadow:var(--shadow);overflow:hidden}.profile-card:before{content:"";position:absolute;right:-52px;top:-72px;width:180px;height:180px;border-radius:50%;background:#edf6ee}.avatar{height:205px;border-radius:17px;background:linear-gradient(145deg,#dcefe2,#f4f8f3);display:grid;place-items:center;position:relative;overflow:hidden}.orbit,.orbit:after{position:absolute;border:1px solid #b7d8c0;border-radius:50%;width:210px;height:210px}.orbit:after{content:"";width:155px;height:155px;left:26px;top:26px}.initials{z-index:1;font-size:58px;letter-spacing:-.09em;font-weight:850;color:var(--green)}.card-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-top:21px}.card-title{font-size:21px;font-weight:800;letter-spacing:-.035em;margin:4px 0}.card-sub{font-size:14px;color:var(--muted)}.status{display:inline-flex;gap:9px;align-items:center;background:#edf7ef;color:#236b49;border-radius:30px;padding:7px 11px;font-size:11px;font-weight:750;margin-top:17px}
+    .quickfacts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px;max-width:620px}.fact{padding:13px 15px;border-left:2px solid #c5dfcc}.fact strong{display:block;font-size:13px;color:var(--green)}.fact span{font-size:12px;color:var(--muted)}
+    section{padding:77px 0;border-top:1px solid var(--line)}.section-head{max-width:700px;margin-bottom:35px}.kicker{font-size:12px;letter-spacing:.15em;color:var(--green);font-weight:850;text-transform:uppercase}h2{font-size:clamp(30px,4vw,45px);letter-spacing:-.055em;line-height:1.13;margin:12px 0 16px}.section-intro{color:var(--muted);font-size:16px;margin:0;max-width:650px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}.about-copy p{color:#58675e;margin:0 0 17px}.principles{display:grid;gap:12px}.principle{display:flex;gap:15px;padding:17px;background:#fff;border:1px solid var(--line);border-radius:14px;transition:transform .2s,border-color .2s}.principle:hover,.service:hover{transform:translateY(-3px);border-color:#c5daca}.icon{width:42px;height:42px;flex:0 0 42px;border-radius:12px;background:var(--pale);display:grid;place-items:center;color:var(--green);font-size:18px;font-weight:850}.principle strong{display:block;margin-bottom:3px}.principle span{font-size:13px;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{padding:25px;background:#fff;border:1px solid var(--line);border-radius:16px;min-height:205px;transition:transform .2s,border-color .2s}.service .icon{margin-bottom:22px}.service h3{font-size:17px;letter-spacing:-.025em;margin:0 0 9px}.service p{font-size:14px;color:var(--muted);margin:0}.resource{margin-top:24px;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 22px;border:1px solid #d7e6d9;background:#eef6ef;border-radius:14px}.resource p{font-size:13px;color:#52675a;margin:3px 0 0}.text-link{color:var(--green);font-size:13px;font-weight:800;white-space:nowrap}
+    .contact{background:#173f30;color:#fff;border-radius:23px;padding:45px;display:flex;align-items:center;justify-content:space-between;gap:30px;overflow:hidden;position:relative}.contact:after{content:"";position:absolute;right:150px;bottom:-160px;width:300px;height:300px;border:1px solid #ffffff20;border-radius:50%;pointer-events:none}.contact h2{max-width:570px;margin-top:10px}.contact p{color:#d1e1d7;max-width:550px;margin-bottom:0}.contact .btn{background:#fff;color:#174b35;border-color:#fff;white-space:nowrap;position:relative;z-index:1}.contact .btn:hover{background:#eaf5ec}
+    footer{padding:27px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:15px}.footer-links{display:flex;gap:18px}
+    @media(max-width:800px){.hero{padding:65px 0;grid-template-columns:1fr;gap:35px}.profile-card{max-width:450px}.about-grid{grid-template-columns:1fr;gap:25px}.cards{grid-template-columns:1fr}.service{min-height:0}.contact{padding:32px;display:block}.contact .btn{margin-top:23px}.contact:after{right:-100px}section{padding:60px 0}.quickfacts{max-width:100%}}
+    @media(max-width:520px){.wrap{width:min(100% - 30px,1120px)}header{height:auto;min-height:70px;gap:14px;padding:13px 0;align-items:flex-start;flex-direction:column}nav{width:100%;gap:17px;flex-wrap:wrap;font-size:12px}.nav-cta{margin-left:auto}.hero{padding-top:48px}.lead{font-size:16px}.quickfacts{gap:6px}.fact{padding:10px 8px}.fact strong{font-size:12px}.fact span{font-size:11px}.resource{align-items:flex-start;flex-direction:column}.contact{padding:26px}.profile-card{padding:19px}footer{flex-direction:column}.footer-links{flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
-  <header class="wrap">
-    <a class="brand" href="#home" aria-label="Rayyan Alzahri, halaman utama"><span class="mark">R.</span><span>Rayyan Alzahri</span></a>
-    <nav aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#fokus">Fokus</a><a href="#kontak">Kontak</a></nav>
-  </header>
+  <div class="topbar">
+    <header class="wrap">
+      <a class="brand" href="#home" aria-label="Rayyan Alzahri, beranda"><span class="mark">RA.</span><span>Rayyan Alzahri</span></a>
+      <nav aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#fokus">Fokus</a><a href="#referensi">Referensi</a><a class="nav-cta" href="#kontak">Terhubung ↗</a></nav>
+    </header>
+  </div>
   <main>
     <div class="wrap hero" id="home">
       <div>
         <div class="eyebrow"><span class="dot"></span> Pustakawan · BINUS University</div>
-        <h1>Menghubungkan orang dengan <span>pengetahuan.</span></h1>
-        <p class="lead">Saya Rayyan Alzahri, pustakawan di Library BINUS University. Saya percaya perpustakaan bukan hanya tempat menemukan informasi, tetapi juga ruang untuk belajar, bertumbuh, dan mengeksplorasi ide.</p>
-        <div class="actions"><a class="btn primary" href="#tentang">Kenali saya <span aria-hidden="true">&nbsp;↗</span></a><a class="btn secondary" href="https://github.com/rayyanalzahri23-a11y" target="_blank" rel="noopener noreferrer">Profil GitHub ↗</a></div>
+        <h1>Menghubungkan manusia dengan <span>pengetahuan.</span></h1>
+        <p class="lead">Saya Rayyan Alzahri, pustakawan di Library BINUS University. Saya percaya perpustakaan bukan sekadar tempat menemukan informasi, tetapi juga ruang untuk belajar, bertumbuh, dan mengeksplorasi gagasan.</p>
+        <div class="actions"><a class="btn primary" href="#tentang">Kenali saya <span aria-hidden="true">↘</span></a><a class="btn secondary" href="https://github.com/rayyanalzahri23-a11y" target="_blank" rel="noopener noreferrer">Profil GitHub ↗</a></div>
+        <div class="quickfacts" aria-label="Ringkasan profil"><div class="fact"><strong>Peran</strong><span>Pustakawan</span></div><div class="fact"><strong>Lingkungan</strong><span>Pendidikan tinggi</span></div><div class="fact"><strong>Minat</strong><span>Informasi & literasi</span></div></div>
       </div>
-      <aside class="profile-card" aria-label="Ringkasan profil">
-        <div class="avatar" aria-label="Inisial Rayyan Alzahri"><div class="initials">RA.</div></div>
-        <div class="card-label">Profil profesional</div>
-        <div class="card-title">Rayyan Alzahri</div>
-        <div class="card-sub">Librarian · Library BINUS University</div>
-        <div class="status"><span class="dot"></span> Literasi · Informasi · Pembelajaran</div>
+      <aside class="profile-card" aria-label="Kartu profil">
+        <div class="avatar" role="img" aria-label="Monogram Rayyan Alzahri"><div class="orbit"></div><div class="initials">RA.</div></div>
+        <div class="card-label">Profil profesional</div><div class="card-title">Rayyan Alzahri</div><div class="card-sub">Librarian · Library BINUS University</div>
+        <div class="status"><span class="dot"></span> Belajar · Berbagi · Bertumbuh</div>
       </aside>
     </div>
 
     <section id="tentang">
       <div class="wrap">
-        <div class="section-head"><div class="kicker">Tentang saya</div><h2>Informasi yang tepat membuka peluang baru.</h2><p class="section-intro">Perkenalan singkat tentang peran dan nilai yang saya bawa dalam dunia perpustakaan akademik.</p></div>
+        <div class="section-head"><div class="kicker">Tentang saya</div><h2>Informasi yang tepat dapat membuka peluang baru.</h2><p class="section-intro">Perkenalan singkat tentang peran dan nilai yang saya bawa dalam lingkungan perpustakaan akademik.</p></div>
         <div class="about-grid">
           <div class="about-copy">
             <p>Sebagai pustakawan di Library BINUS University, saya berada di lingkungan yang dekat dengan kegiatan belajar, riset, dan pertukaran pengetahuan. Saya menghargai peran perpustakaan dalam membantu sivitas akademika menemukan sumber informasi yang relevan dan menggunakannya secara bijak.</p>
-            <p>Halaman ini merupakan profil profesional pribadi yang akan terus berkembang seiring pengalaman, kegiatan, dan proyek yang saya bagikan.</p>
+            <p>Bagi saya, layanan perpustakaan yang baik berawal dari memahami kebutuhan pengguna, memudahkan akses terhadap sumber pengetahuan, dan terus belajar mengikuti perkembangan cara orang mencari serta memanfaatkan informasi.</p>
+            <p>Website ini adalah ruang profil profesional pribadi untuk berbagi perkenalan, minat di bidang kepustakawanan, dan proyek yang akan saya tambahkan dari waktu ke waktu.</p>
           </div>
           <div class="principles">
-            <div class="principle"><div class="icon">⌕</div><div><strong>Akses informasi</strong><span>Mendukung penemuan sumber informasi yang relevan dan bermanfaat.</span></div></div>
-            <div class="principle"><div class="icon">◎</div><div><strong>Literasi informasi</strong><span>Mendorong kebiasaan mencari, mengevaluasi, dan menggunakan informasi secara kritis.</span></div></div>
-            <div class="principle"><div class="icon">↗</div><div><strong>Pembelajaran berkelanjutan</strong><span>Terus terbuka pada pengetahuan, teknologi, dan cara kerja baru.</span></div></div>
+            <div class="principle"><div class="icon" aria-hidden="true">⌕</div><div><strong>Akses informasi</strong><span>Mendukung penemuan sumber informasi yang relevan dan bermanfaat.</span></div></div>
+            <div class="principle"><div class="icon" aria-hidden="true">◎</div><div><strong>Literasi informasi</strong><span>Mendorong kebiasaan mencari, mengevaluasi, dan menggunakan informasi secara kritis.</span></div></div>
+            <div class="principle"><div class="icon" aria-hidden="true">↗</div><div><strong>Pembelajaran berkelanjutan</strong><span>Terus terbuka pada pengetahuan, teknologi, dan cara kerja baru.</span></div></div>
           </div>
         </div>
       </div>
@@ -83,25 +73,31 @@
 
     <section id="fokus">
       <div class="wrap">
-        <div class="section-head"><div class="kicker">Fokus profesional</div><h2>Perpustakaan yang relevan, inklusif, dan bermanfaat.</h2><p class="section-intro">Area yang selaras dengan peran pustakawan di lingkungan pendidikan tinggi.</p></div>
+        <div class="section-head"><div class="kicker">Fokus profesional</div><h2>Perpustakaan yang relevan, inklusif, dan bermanfaat.</h2><p class="section-intro">Bidang yang selaras dengan peran pustakawan di lingkungan pendidikan tinggi.</p></div>
         <div class="cards">
-          <article class="service"><div class="icon">⌕</div><h3>Penelusuran informasi</h3><p>Membantu pengguna memahami kebutuhan informasi dan menemukan sumber yang sesuai untuk belajar maupun riset.</p></article>
-          <article class="service"><div class="icon">▤</div><h3>Sumber daya akademik</h3><p>Mendukung pemanfaatan koleksi, sumber digital, dan layanan perpustakaan untuk kegiatan akademik.</p></article>
-          <article class="service"><div class="icon">✳</div><h3>Literasi dan pengetahuan</h3><p>Mendorong keterampilan berpikir kritis, penggunaan informasi yang bertanggung jawab, dan budaya belajar.</p></article>
+          <article class="service"><div class="icon" aria-hidden="true">⌕</div><h3>Penelusuran informasi</h3><p>Membantu pengguna memahami kebutuhan informasi dan menemukan sumber yang sesuai untuk belajar maupun riset.</p></article>
+          <article class="service"><div class="icon" aria-hidden="true">▤</div><h3>Sumber daya akademik</h3><p>Mendukung pemanfaatan koleksi, sumber digital, dan layanan perpustakaan untuk kegiatan akademik.</p></article>
+          <article class="service"><div class="icon" aria-hidden="true">✳</div><h3>Literasi dan pengetahuan</h3><p>Mendorong keterampilan berpikir kritis, penggunaan informasi yang bertanggung jawab, dan budaya belajar.</p></article>
         </div>
-        <div class="note">Catatan: bagian fokus di atas menggambarkan bidang profesional yang relevan dengan peran pustakawan, bukan daftar pencapaian atau sertifikasi yang telah diverifikasi.</div>
+      </div>
+    </section>
+
+    <section id="referensi">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Referensi</div><h2>Jelajahi layanan perpustakaan.</h2><p class="section-intro">Tautan resmi untuk mengenal lebih jauh Library & Knowledge Center BINUS University.</p></div>
+        <div class="resource"><div><strong>Library & Knowledge Center — BINUS University</strong><p>Informasi layanan perpustakaan dan akses ke sumber daya akademik.</p></div><a class="text-link" href="https://library.binus.ac.id/" target="_blank" rel="noopener noreferrer">Kunjungi situs ↗</a></div>
       </div>
     </section>
 
     <section id="kontak">
       <div class="wrap">
         <div class="contact">
-          <div><div class="kicker" style="color:#9ed7b2">Terhubung</div><h2>Mari bertukar ide dan pengetahuan.</h2><p>Untuk melihat aktivitas dan proyek digital saya, kunjungi profil GitHub. Informasi kontak profesional dapat ditambahkan di sini setelah alamat yang ingin dipublikasikan dikonfirmasi.</p></div>
+          <div><div class="kicker" style="color:#9ed7b2">Terhubung</div><h2>Mari bertukar ide dan pengetahuan.</h2><p>Untuk melihat profil dan proyek digital saya, silakan kunjungi GitHub. Informasi kontak profesional lain dapat ditambahkan setelah alamat yang ingin dipublikasikan dikonfirmasi.</p></div>
           <a class="btn" href="https://github.com/rayyanalzahri23-a11y" target="_blank" rel="noopener noreferrer">Kunjungi GitHub ↗</a>
         </div>
       </div>
     </section>
   </main>
-  <footer class="wrap"><span>© <span id="year">2026</span> Rayyan Alzahri</span><span>Dibuat dengan sederhana, untuk berbagi pengetahuan.</span></footer>
+  <footer class="wrap"><span>© <span id="year">2026</span> Rayyan Alzahri</span><div class="footer-links"><a href="#home">Kembali ke atas ↑</a><a href="https://github.com/rayyanalzahri23-a11y" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></footer>
 </body>
 </html>
